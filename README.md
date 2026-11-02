@@ -1,4 +1,5 @@
 # Article Relationship Model
+> **Status: work in progress.** The search baselines are evaluated; the atom system itself is not yet compared against them. 30 of 87 articles are annotated, and the annotations are unchecked LLM drafts.
 
 Search Dutch statutory law with a plain-language question, and see **why**
 each article was found.
