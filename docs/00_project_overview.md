@@ -1,5 +1,12 @@
 # 00 — Project Overview
 
+The original framing of the project. What is implemented so far:
+cross-references (from the official BWB text) and semantic similarity of
+labels are in the code; lexical similarity is used only as a retrieval
+baseline (BM25), not as a relation between articles; the alternative-grounds
+and evidential-support relations from case law are not implemented yet. The
+README describes the current state.
+
 ## Problem
 
 Take the case where someone wants to sue based on perceived protection by a
@@ -64,8 +71,9 @@ relations to model than a simpler article would.
 
 ## Out of scope
 
-- Full automation of the annotation pipeline. Hand annotation is acceptable
-  for a corpus this size and more defensible methodologically.
+- Fully automatic annotation without a human check. The corpus is drafted
+  by an LLM, but a sample is annotated by hand to measure how far the drafts
+  can be trusted.
 - Articles outside the listed neighbourhood.
 - Languages other than Dutch (English/EU extension is "future work").
 

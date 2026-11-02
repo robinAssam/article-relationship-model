@@ -129,7 +129,8 @@ def _expand_atom(
     min_edge_strength: float,
     limit: int,
 ) -> list[dict]:
-    """One-hop expansion from a source atom via all three edge channels."""
+    """One-hop expansion from a source atom: references out, references in,
+    and strong shared-tag edges."""
     expansions: list[dict] = []
 
     src_row = df[df["atom_id"] == source_atom]

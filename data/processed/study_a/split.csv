@@ -245,6 +245,7 @@ ECLI:NL:RBNHO:2021:1797,test,ECLI:NL:RBNHO:2021:1797,2021-03-04,Rechtbank Noord-
 ECLI:NL:RBNHO:2021:529,test,ECLI:NL:RBNHO:2021:529,2021-01-27,Rechtbank Noord-Holland,Op tegenspraak,section,99,0,7:446 7:448
 ECLI:NL:RBNHO:2021:6286,test,ECLI:NL:RBNHO:2021:6286,2021-07-08,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,section,185,0,6:74 7:446 7:462 7:464
 ECLI:NL:RBNHO:2021:9644,test,ECLI:NL:RBNHO:2021:9644,2021-11-02,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,section,1776,3,7:464
+ECLI:NL:RBNHO:2022:11983,test,ECLI:NL:RBNHO:2022:11983,2022-12-14,Rechtbank Noord-Holland,Bodemzaak,section,2210,11,6:162 7:458a
 ECLI:NL:RBNHO:2022:2539,dev,ECLI:NL:RBNHO:2022:2539,2022-03-23,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,section,126,0,7:464
 ECLI:NL:RBNHO:2022:8032,test,ECLI:NL:RBNHO:2022:8032,2022-08-25,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,heading,248,0,7:464
 ECLI:NL:RBNHO:2023:14097,test,ECLI:NL:RBNHO:2023:14097,2023-11-09,Rechtbank Noord-Holland,Tussenbeschikking,section,225,0,7:464
@@ -269,6 +270,7 @@ ECLI:NL:RBNNE:2019:3830,test,ECLI:NL:RBNNE:2019:3830,2019-09-11,Rechtbank Noord-
 ECLI:NL:RBNNE:2021:2730,test,ECLI:NL:RBNNE:2021:2730,2021-06-10,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,877,0,7:446 7:453
 ECLI:NL:RBNNE:2021:589,dev,ECLI:NL:RBNNE:2021:589,2021-02-17,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,4328,3,7:453
 ECLI:NL:RBNNE:2022:1294,dev,ECLI:NL:RBNNE:2022:1294,2022-04-14,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,1304,0,6:96 6:106 7:448 7:450 7:453
+ECLI:NL:RBNNE:2022:4042,test,ECLI:NL:RBNNE:2022:4042,2022-10-26,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,206,0,7:458a
 ECLI:NL:RBNNE:2024:1858,test,ECLI:NL:RBNNE:2024:1858,2024-04-10,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,3846,0,7:453 7:460 7:462 7:466
 ECLI:NL:RBNNE:2025:1685,dev,ECLI:NL:RBNNE:2025:1685,2025-05-07,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,1071,0,7:457 7:458a
 ECLI:NL:RBNNE:2025:3761,test,ECLI:NL:RBNNE:2025:3761,2025-09-17,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,section,2408,1,7:454 7:457 7:458a
@@ -382,7 +384,9 @@ ECLI:NL:RBZWB:2014:3600,test,ECLI:NL:RBZWB:2014:3600,2014-01-15,Rechtbank Zeelan
 ECLI:NL:RBZWB:2015:2681,test,ECLI:NL:RBZWB:2015:2681,2015-04-15,Rechtbank Zeeland-West-Brabant,Eerste aanleg - enkelvoudig,section,274,0,7:465
 ECLI:NL:RBZWB:2022:523,test,ECLI:NL:RBZWB:2022:523,2022-01-25,Rechtbank Zeeland-West-Brabant,Beschikking,section,132,0,7:457
 ECLI:NL:RBZWB:2022:5457,test,ECLI:NL:RBZWB:2022:5457,2022-09-21,Rechtbank Zeeland-West-Brabant,Bodemzaak,section,711,0,6:95 6:106 6:162 6:170 7:456 7:457 7:462
+ECLI:NL:RBZWB:2023:1155,dev,ECLI:NL:RBZWB:2023:1155,2023-02-20,Rechtbank Zeeland-West-Brabant,Kort geding,section,147,0,7:458a
 ECLI:NL:RBZWB:2023:2658,test,ECLI:NL:RBZWB:2023:2658,2023-04-17,Rechtbank Zeeland-West-Brabant,Kort geding,section,1041,0,7:446 7:460
+ECLI:NL:RBZWB:2024:471,test,ECLI:NL:RBZWB:2024:471,2024-02-05,Rechtbank Zeeland-West-Brabant,Kort geding,section,509,0,7:458a
 ECLI:NL:RBZWB:2024:5547,dev,ECLI:NL:RBZWB:2024:5547,2024-08-07,Rechtbank Zeeland-West-Brabant,Bodemzaak,section,137,1,6:96 7:446
 ECLI:NL:RBZWB:2024:7847,dev,ECLI:NL:RBZWB:2024:7847,2024-10-23,Rechtbank Zeeland-West-Brabant,Bodemzaak,section,135,0,6:96 7:446 7:453 7:461
 ECLI:NL:RBZWB:2025:5519,dev,ECLI:NL:RBZWB:2025:5519,2025-07-09,Rechtbank Zeeland-West-Brabant,Bodemzaak,section,137,0,7:450

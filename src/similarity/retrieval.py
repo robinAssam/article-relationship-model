@@ -11,6 +11,7 @@ atoms, and the metrics every system is scored with:
     zscore_fusion(...)        hybrid: sum of standardised scores of several systems
     rrf_fusion(...)           hybrid: reciprocal rank fusion of several systems
     rank_metrics(...)         recall@k, MRR and nDCG@k for one question
+    answer_ranks(...)         the rank each correct article got, per question
     evaluate(...)             metrics for every question, plus the mean
 
 A system is just a matrix of scores (questions x articles); evaluate() turns
@@ -143,6 +144,24 @@ def rank_metrics(ranked: list[str], answers: set[str], ks=KS, ndcg_k: int = NDCG
         **{f"recall@{k}": sum(hits[:k]) / len(answers) for k in ks},
         f"ndcg@{ndcg_k}": dcg / ideal if ideal else 0.0,
     }
+
+
+def answer_ranks(scores: np.ndarray, ids: list[str], answers: list[list[str]]) -> list[list[float]]:
+    """Rank of every correct article, per question (1 = top).
+
+    Ties share the expected rank: an answer tied with t other articles
+    behind b better ones gets rank b + (t + 2) / 2.
+    """
+    col = {a: i for i, a in enumerate(ids)}
+    out = []
+    for row, ans in zip(scores, answers):
+        ranks = []
+        for a in ans:
+            s = row[col[a]]
+            better, tied = int((row > s).sum()), int((row == s).sum())
+            ranks.append(better + (tied + 1) / 2)
+        out.append(ranks)
+    return out
 
 
 def _ranked_ids(row: np.ndarray, ids: list[str], rng: np.random.Generator) -> list[str]:

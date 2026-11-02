@@ -1,14 +1,18 @@
 """Draw the judgments for the hand check of the study A dataset.
 
 The hand check asks, for a random sample of the judgments citing the WGBO
-(the 703 in caselaw_citations.csv, before any are dropped):
+(caselaw_citations.csv, before any are dropped):
 
     - does the script find the facts section, and is it the right text?
     - is each article counted as an answer applied in substance, or only
       cited in passing or for procedure?
 
-Sampling from all 703, not only the 391 dataset items, also shows whether
-the 254 judgments dropped for "no facts section found" really have none.
+The sample comes from the dev split and from the judgments the build
+dropped, never from the test split: reading test questions and answers
+would make the final test run less independent. The two groups are drawn
+separately (default 35 dev, 15 dropped), because dropped judgments
+outnumber dev ones and the answer check needs enough dataset items; the
+dropped ones show whether "no facts section found" is usually right.
 
 The sample is drawn once with a fixed seed and written to
 data/validation/handcheck_sample.csv (committed), so every annotator checks
@@ -38,7 +42,8 @@ SEED = 20261021
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    p.add_argument("--n", type=int, default=50)
+    p.add_argument("--n-dev", type=int, default=35, help="judgments from the dev split")
+    p.add_argument("--n-dropped", type=int, default=15, help="judgments the build dropped")
     p.add_argument("--force", action="store_true", help="overwrite an existing sample")
     args = p.parse_args()
     if SAMPLE.exists() and not args.force:
@@ -50,8 +55,12 @@ def main() -> None:
                        if r["set"] == "candidate" and int(r["n_wgbo_articles"]) > 0)
     with SPLIT.open(encoding="utf-8") as f:
         split = {r["ecli"]: r["split"] for r in csv.DictReader(f)}
+    dev = [e for e in eclis if split.get(e) == "dev"]
+    dropped = [e for e in eclis if e not in split]
 
-    sample = random.Random(SEED).sample(eclis, args.n)
+    rng = random.Random(SEED)
+    sample = rng.sample(dev, args.n_dev) + rng.sample(dropped, args.n_dropped)
+    rng.shuffle(sample)  # mixed order, so neither group is checked all in one block
     SAMPLE.parent.mkdir(parents=True, exist_ok=True)
     with SAMPLE.open("w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
@@ -59,9 +68,8 @@ def main() -> None:
         for i, ecli in enumerate(sample, 1):
             w.writerow([i, ecli, int(ecli in split)])
 
-    n_in = sum(e in split for e in sample)
-    print(f"{args.n} of {len(eclis)} judgments ({n_in} in the dataset, "
-          f"{args.n - n_in} dropped by the build) -> {SAMPLE.relative_to(PROJECT_ROOT)}")
+    print(f"{args.n_dev} of {len(dev)} dev judgments + {args.n_dropped} of {len(dropped)} "
+          f"dropped by the build -> {SAMPLE.relative_to(PROJECT_ROOT)}")
 
 
 if __name__ == "__main__":

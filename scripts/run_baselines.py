@@ -22,7 +22,9 @@ Every run writes, under outputs/tables/:
     baselines_<split>_summary.json     configuration + mean metrics per system
     baselines_<split>_per_query.csv    one row per question and system, for
                                        error analysis and paired tests
-    graph_sweep_<split>.csv            with --sweep: one row per beta setting
+    baselines_<split>_answer_ranks.csv the rank each correct article got, per
+                                       question and system
+    graph_sweep_<split>.csv           with --sweep: one row per beta setting
 
 Dense embeddings are cached in data/processed/study_a/cache/ (git-ignored).
 
@@ -51,8 +53,8 @@ import pandas as pd  # noqa: E402
 
 from src.graph.propagation import citation_adjacency, spread, tree_adjacency  # noqa: E402
 from src.similarity.retrieval import (  # noqa: E402
-    article_documents, bm25_scores, dense_scores, evaluate, random_scores, rrf_fusion,
-    zscore_fusion,
+    answer_ranks, article_documents, bm25_scores, dense_scores, evaluate, random_scores,
+    rrf_fusion, zscore_fusion,
 )
 
 QUERIES = PROJECT_ROOT / "data" / "processed" / "study_a" / "queries.jsonl"
@@ -138,15 +140,20 @@ def main() -> None:
                 computed[system] = spread(scores_of("hybrid_rrf"), (cite, bc), (tree, bt))
         return computed[system]
 
-    summaries, per_query = {}, []
+    summaries, per_query, per_answer = {}, [], []
     for system in args.systems:
         if system == "random":
             runs = [evaluate(random_scores(len(items), len(ids), seed=s), ids, answers)
                     for s in range(args.random_draws)]
             pq = sum(r[0] for r in runs) / len(runs)
             summary = {k: round(float(np.mean([r[1][k] for r in runs])), 4) for k in runs[0][1]}
+            ranks = [[(len(ids) + 1) / 2] * len(a) for a in answers]  # expected rank
         else:
             pq, summary = evaluate(scores_of(system), ids, answers)
+            ranks = answer_ranks(scores_of(system), ids, answers)
+        for it, ans, rk in zip(items, answers, ranks):
+            per_answer += [{"system": system, "ecli": it["ecli"], "article": a, "rank": r}
+                           for a, r in zip(ans, rk)]
         summaries[system] = summary
         pq.insert(0, "system", system)
         pq.insert(1, "ecli", [it["ecli"] for it in items])
@@ -172,6 +179,7 @@ def main() -> None:
 
     stem = OUT_DIR / f"baselines_{args.split}"
     pd.concat(per_query).to_csv(f"{stem}_per_query.csv", index=False)
+    pd.DataFrame(per_answer).to_csv(f"{stem}_answer_ranks.csv", index=False)
     config = {k: v for k, v in vars(args).items() if k not in ("final", "sweep")}
     Path(f"{stem}_summary.json").write_text(json.dumps({
         "run_at": datetime.now().isoformat(timespec="seconds"),

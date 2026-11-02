@@ -406,6 +406,24 @@ class CaselawTest(unittest.TestCase):
         self.assertEqual(mask_citations("om 7:45 uur en om 19:20 uur"), ("om 7:45 uur en om 19:20 uur", 0))
 
 
+class HierarchyTest(unittest.TestCase):
+    """The legal tree covers every corpus article (src/data/hierarchy.py)."""
+
+    def test_letter_suffix_is_its_own_article(self):
+        from src.data.hierarchy import parse_article_id
+        a, b = parse_article_id("7:458a"), parse_article_id("7:458b(1).a")
+        self.assertEqual((a["artikel"], b["artikel"]), ("7:458a", "7:458b"))
+        self.assertEqual(a["afdeling"], "7.7.5")
+
+    def test_every_downloaded_article_has_an_afdeling(self):
+        from src.data.hierarchy import parse_article_id
+        path = PROJECT_ROOT / "data" / "processed" / "statutes.jsonl"
+        with path.open(encoding="utf-8") as f:
+            ids = [json.loads(line)["article_id"] for line in f]
+        missing = [a for a in ids if parse_article_id(a)["afdeling"] is None]
+        self.assertEqual(missing, [])
+
+
 class RetrievalMetricsTest(unittest.TestCase):
     """Baseline retrieval and multi-answer metrics (src/similarity/retrieval.py)."""
 
@@ -416,6 +434,13 @@ class RetrievalMetricsTest(unittest.TestCase):
         self.assertEqual((m["recall@1"], m["recall@2"], m["recall@4"]), (0.0, 0.5, 1.0))
         self.assertTrue(0 < m["ndcg@4"] < 1)
         self.assertEqual(rank_metrics(["b", "d", "a"], {"b", "d"}, ndcg_k=4)["ndcg@4"], 1.0)
+
+    def test_answer_ranks_with_ties(self):
+        import numpy as np
+        from src.similarity.retrieval import answer_ranks
+        scores = np.array([[0.9, 0.5, 0.5, 0.1]])
+        # "a" is first; "b" is tied with "c" behind one better article: rank 2.5
+        self.assertEqual(answer_ranks(scores, ["a", "b", "c", "d"], [["a", "b"]]), [[1.0, 2.5]])
 
     def test_ties_are_averaged_not_ordered(self):
         import numpy as np
@@ -455,14 +480,28 @@ class PropagationTest(unittest.TestCase):
         (cls.tmp / "refs.csv").write_text(
             "source_article,target_article\n7:454,7:455\n7:454,7:454\n7:454,99:1\n", encoding="utf-8")
         with (cls.tmp / "statutes.jsonl").open("w", encoding="utf-8") as f:
-            for a, path in [("7:454", "/Boek7/A5"), ("7:455", "/Boek7/A5"),
-                            ("7:453", "/Boek7/A5"), ("6:162", "/Boek6/A1")]:
+            for a, path in [("7:454", "/Boek7/Titeldeel7/Afdeling5"),
+                            ("7:455", "/Boek7/Titeldeel7/Afdeling5"),
+                            ("7:453", "/Boek7/Titeldeel7/Afdeling5"),
+                            ("6:162", "/Boek6/Titeldeel3/Afdeling1")]:
                 f.write(json.dumps({"article_id": a, "path": f"{path}/Artikel{a}"}) + "\n")
 
     def test_citation_links_are_undirected_and_skip_self_and_outside(self):
         from src.graph.propagation import citation_adjacency
         A = citation_adjacency(self.ids, self.tmp / "refs.csv")
         self.assertEqual((A[0, 1], A[1, 0], A[0, 0], A.sum()), (1.0, 1.0, 0.0, 2.0))
+
+    def test_tree_links_cross_paragrafen_within_an_afdeling(self):
+        from src.graph.propagation import tree_adjacency
+        ids = ["6:74", "6:81", "6:95"]
+        path = self.tmp / "paragrafen.jsonl"
+        with path.open("w", encoding="utf-8") as f:
+            for a, p in [("6:74", "/Boek6/Titeldeel1/Afdeling9/Paragraaf1"),
+                         ("6:81", "/Boek6/Titeldeel1/Afdeling9/Paragraaf3"),
+                         ("6:95", "/Boek6/Titeldeel1/Afdeling10")]:
+                f.write(json.dumps({"article_id": a, "path": f"{p}/Artikel{a[2:]}"}) + "\n")
+        A = tree_adjacency(ids, path)
+        self.assertEqual(A[0].tolist(), [0.0, 1.0, 0.0])
 
     def test_tree_links_same_section_only(self):
         from src.graph.propagation import tree_adjacency

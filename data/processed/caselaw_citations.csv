@@ -501,7 +501,7 @@ ECLI:NL:GHAMS:2024:613,2024,20-02-2024,Gerechtshof Amsterdam,Hoger beroep,candid
 ECLI:NL:GHAMS:2024:69,2024,11-01-2024,Gerechtshof Amsterdam,Eerste aanleg - meervoudig,sample,0,0,,
 ECLI:NL:GHAMS:2024:772,2024,26-03-2024,Gerechtshof Amsterdam,Hoger beroep,candidate,0,0,,6:105 6:119 6:89 6:97 7:902
 ECLI:NL:GHAMS:2024:824,2024,02-04-2024,Gerechtshof Amsterdam,Hoger beroep,sample,0,0,,6:162 7:230a
-ECLI:NL:GHAMS:2024:956,2024,16-04-2024,Gerechtshof Amsterdam,Hoger beroep,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:GHAMS:2024:956,2024,16-04-2024,Gerechtshof Amsterdam,Hoger beroep,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:GHAMS:2025:1313,2025,20-05-2025,Gerechtshof Amsterdam,Hoger beroep,candidate,0,0,,6:215 7:406 7:408 7:411 7:413
 ECLI:NL:GHAMS:2025:2164,2025,12-08-2025,Gerechtshof Amsterdam,Hoger beroep,sample,0,0,,
 ECLI:NL:GHAMS:2025:2182,2025,19-08-2025,Gerechtshof Amsterdam,Hoger beroep,candidate,0,0,,
@@ -887,7 +887,7 @@ ECLI:NL:GHARL:2026:162,2026,13-01-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroe
 ECLI:NL:GHARL:2026:1730,2026,10-03-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,sample,0,0,,
 ECLI:NL:GHARL:2026:1787,2026,24-03-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,candidate,0,0,,6:217 6:83 6:96 7:2 7:401
 ECLI:NL:GHARL:2026:1789,2026,24-03-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,candidate,0,0,,6:109 6:119 6:6 7:404 7:960
-ECLI:NL:GHARL:2026:1881,2026,24-03-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,candidate,0,2,7:457 7:458,7:457 7:458 7:458a
+ECLI:NL:GHARL:2026:1881,2026,24-03-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,candidate,0,3,7:457 7:458 7:458a,7:457 7:458 7:458a
 ECLI:NL:GHARL:2026:2351,2026,21-04-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHARL:2026:2458,2026,21-04-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,candidate,0,0,,6:119 7:404 7:707 7:857 7:858
 ECLI:NL:GHARL:2026:2618,2026,28-04-2026,Gerechtshof Arnhem-Leeuwarden,Hoger beroep,sample,0,0,,
@@ -1075,7 +1075,7 @@ ECLI:NL:GHDHA:2019:1819,2019,02-07-2019,Gerechtshof Den Haag,Hoger beroep,candid
 ECLI:NL:GHDHA:2019:1978,2019,23-07-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHDHA:2019:1990,2019,06-08-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:77
 ECLI:NL:GHDHA:2019:2077,2019,06-08-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:96 7:658
-ECLI:NL:GHDHA:2019:2103,2019,20-08-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,2,7:454 7:457,7:454 7:457 7:458a
+ECLI:NL:GHDHA:2019:2103,2019,20-08-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,3,7:454 7:457 7:458a,7:454 7:457 7:458a
 ECLI:NL:GHDHA:2019:211,2019,12-02-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:119
 ECLI:NL:GHDHA:2019:2172,2019,20-08-2019,Gerechtshof Den Haag,Hoger beroep,candidate,0,1,7:453,6:119 7:453
 ECLI:NL:GHDHA:2019:2240,2019,27-08-2019,Gerechtshof Den Haag,Hoger beroep,candidate,1,0,,6:119 6:96
@@ -1132,7 +1132,7 @@ ECLI:NL:GHDHA:2023:1805,2023,29-08-2023,Gerechtshof Den Haag,Hoger beroep,candid
 ECLI:NL:GHDHA:2023:1873,2023,29-08-2023,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:136
 ECLI:NL:GHDHA:2023:2228,2023,22-11-2023,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHDHA:2023:2256,2023,05-12-2023,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:119 7:610
-ECLI:NL:GHDHA:2023:226,2023,21-02-2023,Gerechtshof Den Haag,Hoger beroep kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:GHDHA:2023:226,2023,21-02-2023,Gerechtshof Den Haag,Hoger beroep kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:GHDHA:2023:2285,2023,05-12-2023,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:119
 ECLI:NL:GHDHA:2023:2778,2023,20-12-2023,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHDHA:2023:331,2023,17-01-2023,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,
@@ -1159,7 +1159,7 @@ ECLI:NL:GHDHA:2025:1322,2025,01-07-2025,Gerechtshof Den Haag,Hoger beroep,candid
 ECLI:NL:GHDHA:2025:14,2025,14-01-2025,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHDHA:2025:1778,2025,16-09-2025,Gerechtshof Den Haag,Hoger beroep kort geding,candidate,0,0,,
 ECLI:NL:GHDHA:2025:1844,2025,09-09-2025,Gerechtshof Den Haag,Hoger beroep,sample,0,0,,6:119 6:162 7:907
-ECLI:NL:GHDHA:2025:2036,2025,16-09-2025,Gerechtshof Den Haag,Hoger beroep kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:GHDHA:2025:2036,2025,16-09-2025,Gerechtshof Den Haag,Hoger beroep kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:GHDHA:2025:2170,2025,22-04-2025,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:203 6:212
 ECLI:NL:GHDHA:2025:2580,2025,16-12-2025,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,6:205 6:96 7:400
 ECLI:NL:GHDHA:2025:2925,2025,27-05-2025,Gerechtshof Den Haag,Hoger beroep,candidate,0,0,,
@@ -1463,7 +1463,7 @@ ECLI:NL:GHSHE:2017:4530,2017,17-10-2017,Gerechtshof 's-Hertogenbosch,Hoger beroe
 ECLI:NL:GHSHE:2017:4802,2017,07-11-2017,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,6:119
 ECLI:NL:GHSHE:2017:5376,2017,05-12-2017,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHSHE:2017:5734,2017,19-12-2017,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,1,7:446,6:96 7:446
-ECLI:NL:GHSHE:2017:942,2017,07-03-2017,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:GHSHE:2017:942,2017,07-03-2017,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:GHSHE:2018:1204,2018,20-03-2018,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,7:401
 ECLI:NL:GHSHE:2018:1403,2018,03-04-2018,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,6:10 6:227 6:248
 ECLI:NL:GHSHE:2018:1542,2018,12-04-2018,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,
@@ -1563,7 +1563,7 @@ ECLI:NL:GHSHE:2020:737,2020,27-02-2020,Gerechtshof 's-Hertogenbosch,Hoger beroep
 ECLI:NL:GHSHE:2020:883,2020,10-03-2020,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,6:106 6:119 6:162 6:228 6:74 6:96 6:98 7:407
 ECLI:NL:GHSHE:2021:1086,2021,13-04-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,6:119 6:96
 ECLI:NL:GHSHE:2021:117,2021,21-01-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,
-ECLI:NL:GHSHE:2021:1357,2021,04-05-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep kort geding,candidate,0,1,7:457,6:119 7:457 7:458a
+ECLI:NL:GHSHE:2021:1357,2021,04-05-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep kort geding,candidate,0,2,7:457 7:458a,6:119 7:457 7:458a
 ECLI:NL:GHSHE:2021:1622,2021,01-06-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHSHE:2021:2614,2021,24-08-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,7:400
 ECLI:NL:GHSHE:2021:2780,2021,02-09-2021,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,
@@ -1592,7 +1592,7 @@ ECLI:NL:GHSHE:2022:2098,2022,28-06-2022,Gerechtshof 's-Hertogenbosch,Hoger beroe
 ECLI:NL:GHSHE:2022:2198,2022,05-07-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHSHE:2022:240,2022,01-02-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,6:212
 ECLI:NL:GHSHE:2022:2558,2022,26-07-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep kort geding,candidate,0,0,,
-ECLI:NL:GHSHE:2022:2693,2022,02-08-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,1,7:457,7:457 7:458a 7:458b
+ECLI:NL:GHSHE:2022:2693,2022,02-08-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,3,7:457 7:458a 7:458b,7:457 7:458a 7:458b
 ECLI:NL:GHSHE:2022:2909,2022,23-08-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,6:101 6:162 6:170 6:2 6:75 6:76 7:401
 ECLI:NL:GHSHE:2022:2913,2022,23-08-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,6:162
 ECLI:NL:GHSHE:2022:3624,2022,20-10-2022,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,7:677 7:678 7:683
@@ -1630,7 +1630,7 @@ ECLI:NL:GHSHE:2024:3867,2024,05-12-2024,Gerechtshof 's-Hertogenbosch,Hoger beroe
 ECLI:NL:GHSHE:2024:547,2024,22-02-2024,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHSHE:2024:601,2024,27-02-2024,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,
 ECLI:NL:GHSHE:2024:88,2024,16-01-2024,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,
-ECLI:NL:GHSHE:2024:917,2024,19-03-2024,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:GHSHE:2024:917,2024,19-03-2024,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:GHSHE:2025:1148,2025,22-04-2025,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,6:162
 ECLI:NL:GHSHE:2025:118,2025,21-01-2025,Gerechtshof 's-Hertogenbosch,Hoger beroep,sample,0,0,,6:119 6:23 6:82 6:92 7:400
 ECLI:NL:GHSHE:2025:122,2025,21-01-2025,Gerechtshof 's-Hertogenbosch,Hoger beroep,candidate,0,0,,6:119 6:233 6:236 6:237 7:401
@@ -2105,7 +2105,7 @@ ECLI:NL:OGEAM:2019:30,2019,29-03-2019,Gerecht in eerste aanleg van Sint Maarten,
 ECLI:NL:OGEAM:2020:26,2020,12-05-2020,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,candidate,0,0,,6:237
 ECLI:NL:OGEAM:2020:69,2020,15-09-2020,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,candidate,0,0,,6:95
 ECLI:NL:OGEAM:2021:99,2021,22-10-2021,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,sample,0,0,,
-ECLI:NL:OGEAM:2022:64,2022,09-09-2022,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a 7:458b
+ECLI:NL:OGEAM:2022:64,2022,09-09-2022,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,candidate,0,3,7:457 7:458a 7:458b,7:457 7:458a 7:458b
 ECLI:NL:OGEAM:2025:62,2025,19-08-2025,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,sample,0,0,,
 ECLI:NL:OGEAM:2026:11,2026,20-01-2026,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:OGEAM:2026:48,2026,25-02-2026,Gerecht in eerste aanleg van Sint Maarten,Eerste aanleg - enkelvoudig,candidate,0,0,,
@@ -2508,7 +2508,7 @@ ECLI:NL:RBAMS:2022:4093,2022,15-07-2022,Rechtbank Amsterdam,Eerste aanleg - enke
 ECLI:NL:RBAMS:2022:4160,2022,21-07-2022,Rechtbank Amsterdam,Beschikking,candidate,0,0,,
 ECLI:NL:RBAMS:2022:4909,2022,03-08-2022,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,4,7:446 7:448 7:450 7:453,7:446 7:448 7:450 7:453 7:954
 ECLI:NL:RBAMS:2022:5154,2022,27-07-2022,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119 6:217 6:236n 7:900 7:904
-ECLI:NL:RBAMS:2022:5178,2022,01-09-2022,Rechtbank Amsterdam,Kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBAMS:2022:5178,2022,01-09-2022,Rechtbank Amsterdam,Kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBAMS:2022:5227,2022,09-09-2022,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,sample,0,0,,
 ECLI:NL:RBAMS:2022:5566,2022,05-10-2022,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119
 ECLI:NL:RBAMS:2022:6785,2022,16-11-2022,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,7:401
@@ -2536,7 +2536,7 @@ ECLI:NL:RBAMS:2023:3344,2023,09-05-2023,Rechtbank Amsterdam,Eerste aanleg - enke
 ECLI:NL:RBAMS:2023:3515,2023,22-05-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,7:1 7:3 7:6
 ECLI:NL:RBAMS:2023:3576,2023,06-06-2023,Rechtbank Amsterdam,Kort geding,sample,0,0,,
 ECLI:NL:RBAMS:2023:3944,2023,22-06-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,1,7:464,7:464
-ECLI:NL:RBAMS:2023:4085,2023,04-05-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBAMS:2023:4085,2023,04-05-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBAMS:2023:4144,2023,26-04-2023,Rechtbank Amsterdam,Beschikking,candidate,0,0,,7:11
 ECLI:NL:RBAMS:2023:4341,2023,18-08-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBAMS:2023:442,2023,01-02-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,1,7:464,7:464
@@ -2555,7 +2555,7 @@ ECLI:NL:RBAMS:2023:6714,2023,26-10-2023,Rechtbank Amsterdam,Eerste aanleg - enke
 ECLI:NL:RBAMS:2023:7098,2023,08-11-2023,Rechtbank Amsterdam,Wraking,sample,0,0,,
 ECLI:NL:RBAMS:2023:7337,2023,23-11-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:230h 6:230l 6:96
 ECLI:NL:RBAMS:2023:750,2023,14-02-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,
-ECLI:NL:RBAMS:2023:7533,2023,28-11-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBAMS:2023:7533,2023,28-11-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBAMS:2023:7581,2023,29-11-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119
 ECLI:NL:RBAMS:2023:7599,2023,29-11-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:163 7:954
 ECLI:NL:RBAMS:2023:7704,2023,01-09-2023,Rechtbank Amsterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,7:7
@@ -3056,7 +3056,7 @@ ECLI:NL:RBDHA:2022:10309,2022,05-10-2022,Rechtbank Den Haag,Bodemzaak,candidate,
 ECLI:NL:RBDHA:2022:10310,2022,07-10-2022,Rechtbank Den Haag,Rekestprocedure,candidate,0,0,,
 ECLI:NL:RBDHA:2022:11163,2022,14-10-2022,Rechtbank Den Haag,Kort geding,candidate,0,0,,
 ECLI:NL:RBDHA:2022:11360,2022,20-10-2022,Rechtbank Den Haag,Kort geding,candidate,0,0,,
-ECLI:NL:RBDHA:2022:12608,2022,24-11-2022,Rechtbank Den Haag,Kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBDHA:2022:12608,2022,24-11-2022,Rechtbank Den Haag,Kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBDHA:2022:13241,2022,22-11-2022,Rechtbank Den Haag,Kort geding,candidate,0,0,,
 ECLI:NL:RBDHA:2022:13416,2022,08-12-2022,Rechtbank Den Haag,Beschikking,sample,0,0,,
 ECLI:NL:RBDHA:2022:13606,2022,11-11-2022,Rechtbank Den Haag,Beschikking,sample,0,0,,
@@ -3131,7 +3131,7 @@ ECLI:NL:RBDHA:2024:14791,2024,17-09-2024,Rechtbank Den Haag,Eerste aanleg - enke
 ECLI:NL:RBDHA:2024:16030,2024,20-08-2024,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,sample,0,0,,
 ECLI:NL:RBDHA:2024:16297,2024,18-09-2024,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,1,1,7:446,7:446
 ECLI:NL:RBDHA:2024:16832,2024,16-10-2024,Rechtbank Den Haag,Bodemzaak,candidate,0,0,,
-ECLI:NL:RBDHA:2024:16985,2024,23-10-2024,Rechtbank Den Haag,Kort geding,candidate,0,1,7:457,6:119 7:457 7:458a 7:458b
+ECLI:NL:RBDHA:2024:16985,2024,23-10-2024,Rechtbank Den Haag,Kort geding,candidate,0,3,7:457 7:458a 7:458b,6:119 7:457 7:458a 7:458b
 ECLI:NL:RBDHA:2024:17269,2024,27-09-2024,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,1,7:450,7:450
 ECLI:NL:RBDHA:2024:17274,2024,24-10-2024,Rechtbank Den Haag,Bodemzaak,candidate,0,2,7:453 7:465,7:453 7:465 7:611 7:625 7:628
 ECLI:NL:RBDHA:2024:17328,2024,25-06-2024,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119
@@ -3259,7 +3259,7 @@ ECLI:NL:RBDHA:2026:3348,2026,20-02-2026,Rechtbank Den Haag,Eerste aanleg - enkel
 ECLI:NL:RBDHA:2026:3538,2026,23-01-2026,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,sample,0,0,,
 ECLI:NL:RBDHA:2026:425,2026,13-01-2026,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119
 ECLI:NL:RBDHA:2026:7028,2026,26-02-2026,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,0,,6:1 6:2 6:4
-ECLI:NL:RBDHA:2026:7307,2026,17-03-2026,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBDHA:2026:7307,2026,17-03-2026,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBDHA:2026:887,2026,15-01-2026,Rechtbank Den Haag,Eerste aanleg - enkelvoudig,candidate,0,0,,7:11
 ECLI:NL:RBDOR:2003:AH8560,2003,12-06-2003,Rechtbank Dordrecht,Kort geding,candidate,0,1,7:446,7:446
 ECLI:NL:RBDOR:2003:AN8055,2003,12-11-2003,Rechtbank Dordrecht,Eerste aanleg - meervoudig,sample,0,0,,
@@ -3507,7 +3507,7 @@ ECLI:NL:RBGEL:2022:2737,2022,01-06-2022,Rechtbank Gelderland,Eerste aanleg - enk
 ECLI:NL:RBGEL:2022:2738,2022,01-06-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:203 7:938
 ECLI:NL:RBGEL:2022:2739,2022,01-06-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:203 7:938
 ECLI:NL:RBGEL:2022:2740,2022,01-06-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:203 7:938
-ECLI:NL:RBGEL:2022:281,2022,26-01-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a 7:458b
+ECLI:NL:RBGEL:2022:281,2022,26-01-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,3,7:457 7:458a 7:458b,7:457 7:458a 7:458b
 ECLI:NL:RBGEL:2022:3208,2022,24-06-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:96 7:611 7:669 7:671b 7:686a
 ECLI:NL:RBGEL:2022:3340,2022,06-07-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,1,7:448,7:448
 ECLI:NL:RBGEL:2022:3442,2022,13-06-2022,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:1 6:2 6:4
@@ -3577,7 +3577,7 @@ ECLI:NL:RBGEL:2023:7212,2023,15-09-2023,Rechtbank Gelderland,Eerste aanleg - enk
 ECLI:NL:RBGEL:2023:7499,2023,19-10-2023,Rechtbank Gelderland,Beschikking,sample,0,0,,
 ECLI:NL:RBGEL:2023:946,2023,27-02-2023,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:7
 ECLI:NL:RBGEL:2024:1215,2024,07-03-2024,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,3,7:454 7:456 7:457,7:454 7:456 7:457 7:478a
-ECLI:NL:RBGEL:2024:1298,2024,28-02-2024,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,6:2 6:96 7:457 7:458a
+ECLI:NL:RBGEL:2024:1298,2024,28-02-2024,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,6:2 6:96 7:457 7:458a
 ECLI:NL:RBGEL:2024:2101,2024,02-04-2024,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBGEL:2024:2376,2024,22-04-2024,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:4
 ECLI:NL:RBGEL:2024:2842,2024,15-05-2024,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,2,7:453 7:462,7:453 7:462 7:954
@@ -3617,11 +3617,11 @@ ECLI:NL:RBGEL:2025:5064,2025,02-07-2025,Rechtbank Gelderland,Eerste aanleg - enk
 ECLI:NL:RBGEL:2025:5294,2025,23-06-2025,Rechtbank Gelderland,Beschikking,candidate,0,0,,
 ECLI:NL:RBGEL:2025:5904,2025,30-07-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:106 6:96
 ECLI:NL:RBGEL:2025:6769,2025,25-07-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,
-ECLI:NL:RBGEL:2025:6773,2025,18-04-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,6:119 7:457 7:458a
+ECLI:NL:RBGEL:2025:6773,2025,18-04-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,6:119 7:457 7:458a
 ECLI:NL:RBGEL:2025:6917,2025,23-04-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:162
 ECLI:NL:RBGEL:2025:7254,2025,30-07-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:105 6:119 7:400 7:401 7:928
 ECLI:NL:RBGEL:2025:7499,2025,10-09-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,sample,0,0,,
-ECLI:NL:RBGEL:2025:7811,2025,15-09-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBGEL:2025:7811,2025,15-09-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBGEL:2025:8123,2025,19-09-2025,Rechtbank Gelderland,Bodemzaak,candidate,0,0,,
 ECLI:NL:RBGEL:2025:8851,2025,10-10-2025,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBGEL:2025:9712,2025,29-10-2025,Rechtbank Gelderland,Bodemzaak,candidate,0,0,,6:119 7:954
@@ -3643,7 +3643,7 @@ ECLI:NL:RBGEL:2026:5351,2026,19-06-2026,Rechtbank Gelderland,Bodemzaak,candidate
 ECLI:NL:RBGEL:2026:5808,2026,20-07-2026,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:669 7:671b
 ECLI:NL:RBGEL:2026:5906,2026,26-06-2026,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBGEL:2026:5924,2026,25-06-2026,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,
-ECLI:NL:RBGEL:2026:5964,2026,12-06-2026,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,2,7:446 7:457,6:119 7:446 7:457 7:458a 7:458b
+ECLI:NL:RBGEL:2026:5964,2026,12-06-2026,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,4,7:446 7:457 7:458a 7:458b,6:119 7:446 7:457 7:458a 7:458b
 ECLI:NL:RBGEL:2026:600,2026,04-02-2026,Rechtbank Gelderland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:105 6:96
 ECLI:NL:RBGEL:2026:6059,2026,29-07-2026,Rechtbank Gelderland,Bodemzaak,candidate,0,0,,6:119
 ECLI:NL:RBGEL:2026:6060,2026,29-07-2026,Rechtbank Gelderland,Bodemzaak,candidate,0,0,,6:96
@@ -3991,7 +3991,7 @@ ECLI:NL:RBLIM:2026:1201,2026,13-01-2026,Rechtbank Limburg,Beschikking,candidate,
 ECLI:NL:RBLIM:2026:1757,2026,19-02-2026,Rechtbank Limburg,Beschikking,candidate,0,0,,6:101 6:96
 ECLI:NL:RBLIM:2026:2149,2026,11-03-2026,Rechtbank Limburg,Bodemzaak,sample,0,0,,6:162 6:2
 ECLI:NL:RBLIM:2026:306,2026,21-01-2026,Rechtbank Limburg,Bodemzaak,candidate,0,0,,6:119 6:230h 6:96
-ECLI:NL:RBLIM:2026:4687,2026,13-05-2026,Rechtbank Limburg,Bodemzaak,candidate,0,1,7:453,7:453 7:458a 7:458b
+ECLI:NL:RBLIM:2026:4687,2026,13-05-2026,Rechtbank Limburg,Bodemzaak,candidate,0,3,7:453 7:458a 7:458b,7:453 7:458a 7:458b
 ECLI:NL:RBLIM:2026:4712,2026,20-05-2026,Rechtbank Limburg,Bodemzaak,candidate,0,0,,6:119 6:233 6:96
 ECLI:NL:RBLIM:2026:5389,2026,27-05-2026,Rechtbank Limburg,Beschikking,candidate,0,0,,6:96
 ECLI:NL:RBLIM:2026:5981,2026,09-06-2026,Rechtbank Limburg,Beschikking,candidate,0,0,,
@@ -4336,7 +4336,7 @@ ECLI:NL:RBMNE:2024:5005,2024,02-08-2024,Rechtbank Midden-Nederland,Eerste aanleg
 ECLI:NL:RBMNE:2024:5034,2024,14-08-2024,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119
 ECLI:NL:RBMNE:2024:5109,2024,21-08-2024,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:106 6:262
 ECLI:NL:RBMNE:2024:5157,2024,15-08-2024,Rechtbank Midden-Nederland,Kort geding,candidate,0,1,7:453,6:119 7:453
-ECLI:NL:RBMNE:2024:5502,2024,18-09-2024,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,3,7:446 7:454 7:457,6:119 7:446 7:454 7:457 7:458a
+ECLI:NL:RBMNE:2024:5502,2024,18-09-2024,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,4,7:446 7:454 7:457 7:458a,6:119 7:446 7:454 7:457 7:458a
 ECLI:NL:RBMNE:2024:5658,2024,17-09-2024,Rechtbank Midden-Nederland,Kort geding,candidate,0,0,,7:220
 ECLI:NL:RBMNE:2024:5820,2024,13-09-2024,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBMNE:2024:5827,2024,27-06-2024,Rechtbank Midden-Nederland,Beschikking,candidate,0,0,,7:11
@@ -4415,7 +4415,7 @@ ECLI:NL:RBMNE:2026:1245,2026,18-03-2026,Rechtbank Midden-Nederland,Eerste aanleg
 ECLI:NL:RBMNE:2026:1248,2026,18-03-2026,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,1,7:464,7:464
 ECLI:NL:RBMNE:2026:1298,2026,01-04-2026,Rechtbank Midden-Nederland,Kort geding,candidate,0,0,,
 ECLI:NL:RBMNE:2026:1395,2026,08-04-2026,Rechtbank Midden-Nederland,Kort geding,candidate,0,0,,6:119 7:629 7:660a
-ECLI:NL:RBMNE:2026:1506,2026,10-04-2026,Rechtbank Midden-Nederland,Kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBMNE:2026:1506,2026,10-04-2026,Rechtbank Midden-Nederland,Kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBMNE:2026:1557,2026,11-02-2026,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,sample,0,0,,6:119a 6:228 7:755
 ECLI:NL:RBMNE:2026:1903,2026,15-04-2026,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119 6:96
 ECLI:NL:RBMNE:2026:213,2026,21-01-2026,Rechtbank Midden-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,
@@ -4597,7 +4597,7 @@ ECLI:NL:RBNHO:2022:10360,2022,14-09-2022,Rechtbank Noord-Holland,Tussenuitspraak
 ECLI:NL:RBNHO:2022:10684,2022,21-11-2022,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:7
 ECLI:NL:RBNHO:2022:11040,2022,14-09-2022,Rechtbank Noord-Holland,Tussenuitspraak,candidate,0,0,,
 ECLI:NL:RBNHO:2022:11641,2022,21-12-2022,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:6
-ECLI:NL:RBNHO:2022:11983,2022,14-12-2022,Rechtbank Noord-Holland,Bodemzaak,candidate,0,0,,6:119 6:162 7:458a
+ECLI:NL:RBNHO:2022:11983,2022,14-12-2022,Rechtbank Noord-Holland,Bodemzaak,candidate,0,1,7:458a,6:119 6:162 7:458a
 ECLI:NL:RBNHO:2022:12315,2022,15-06-2022,Rechtbank Noord-Holland,Bodemzaak,candidate,0,0,,6:119 6:215 6:265 6:267 6:271 6:272 6:83
 ECLI:NL:RBNHO:2022:1469,2022,07-02-2022,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:7
 ECLI:NL:RBNHO:2022:1599,2022,24-02-2022,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,candidate,0,0,,
@@ -4714,7 +4714,7 @@ ECLI:NL:RBNHO:2024:2222,2024,21-02-2024,Rechtbank Noord-Holland,Eerste aanleg - 
 ECLI:NL:RBNHO:2024:2652,2024,15-03-2024,Rechtbank Noord-Holland,Eerste aanleg - meervoudig,candidate,0,0,,
 ECLI:NL:RBNHO:2024:3358,2024,12-03-2024,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,sample,0,0,,
 ECLI:NL:RBNHO:2024:3670,2024,10-04-2024,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:162 7:962
-ECLI:NL:RBNHO:2024:3701,2024,11-04-2024,Rechtbank Noord-Holland,Kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBNHO:2024:3701,2024,11-04-2024,Rechtbank Noord-Holland,Kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBNHO:2024:4985,2024,29-05-2024,Rechtbank Noord-Holland,Eerste aanleg - enkelvoudig,candidate,0,1,7:464,7:464
 ECLI:NL:RBNHO:2024:5148,2024,22-05-2024,Rechtbank Noord-Holland,Bodemzaak,sample,0,0,,6:119a 6:52 7:758
 ECLI:NL:RBNHO:2024:5214,2024,17-04-2024,Rechtbank Noord-Holland,Tussenuitspraak,sample,0,0,,6:119 6:233 6:96
@@ -4918,7 +4918,7 @@ ECLI:NL:RBNNE:2022:3479,2022,29-09-2022,Rechtbank Noord-Nederland,Beschikking,ca
 ECLI:NL:RBNNE:2022:3627,2022,05-10-2022,Rechtbank Noord-Nederland,Bodemzaak,sample,0,0,,6:177
 ECLI:NL:RBNNE:2022:3966,2022,18-10-2022,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:4
 ECLI:NL:RBNNE:2022:4020,2022,05-09-2022,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:4
-ECLI:NL:RBNNE:2022:4042,2022,26-10-2022,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:458a
+ECLI:NL:RBNNE:2022:4042,2022,26-10-2022,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,1,7:458a,7:458a
 ECLI:NL:RBNNE:2022:4307,2022,18-11-2022,Rechtbank Noord-Nederland,Beschikking,sample,0,0,,
 ECLI:NL:RBNNE:2022:4532,2022,05-12-2022,Rechtbank Noord-Nederland,Beschikking,candidate,1,0,,
 ECLI:NL:RBNNE:2022:61,2022,06-01-2022,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:11
@@ -4949,12 +4949,12 @@ ECLI:NL:RBNNE:2024:4604,2024,24-09-2024,Rechtbank Noord-Nederland,Op tegenspraak
 ECLI:NL:RBNNE:2024:5148,2024,11-12-2024,Rechtbank Noord-Nederland,Bodemzaak,candidate,0,0,,6:3 7:201
 ECLI:NL:RBNNE:2024:5449,2024,20-02-2024,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,sample,0,0,,7:671b 7:673
 ECLI:NL:RBNNE:2025:1141,2025,26-03-2025,Rechtbank Noord-Nederland,Bodemzaak,candidate,0,0,,6:119
-ECLI:NL:RBNNE:2025:1685,2025,07-05-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBNNE:2025:1685,2025,07-05-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBNNE:2025:2160,2025,26-05-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:4
 ECLI:NL:RBNNE:2025:2380,2025,02-06-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:4
 ECLI:NL:RBNNE:2025:268,2025,22-01-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,7:1 7:7 7:8
 ECLI:NL:RBNNE:2025:2703,2025,03-07-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,6:4
-ECLI:NL:RBNNE:2025:3761,2025,17-09-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,2,7:454 7:457,7:454 7:457 7:458a 7:941
+ECLI:NL:RBNNE:2025:3761,2025,17-09-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,3,7:454 7:457 7:458a,7:454 7:457 7:458a 7:941
 ECLI:NL:RBNNE:2025:3842,2025,12-09-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBNNE:2025:4253,2025,02-10-2025,Rechtbank Noord-Nederland,Eerste en enige aanleg,candidate,0,0,,
 ECLI:NL:RBNNE:2025:4966,2025,03-09-2025,Rechtbank Noord-Nederland,Beschikking,candidate,0,0,,6:4
@@ -4963,7 +4963,7 @@ ECLI:NL:RBNNE:2025:5347,2025,03-12-2025,Rechtbank Noord-Nederland,Eerste en enig
 ECLI:NL:RBNNE:2025:5358,2025,18-04-2025,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBNNE:2025:5853,2025,03-12-2025,Rechtbank Noord-Nederland,Voorlopige voorziening,sample,0,0,,
 ECLI:NL:RBNNE:2026:1229,2026,15-04-2026,Rechtbank Noord-Nederland,Op tegenspraak,candidate,0,0,,6:162
-ECLI:NL:RBNNE:2026:1965,2026,27-05-2026,Rechtbank Noord-Nederland,Kort geding,candidate,0,1,7:457,6:119 7:457 7:458a
+ECLI:NL:RBNNE:2026:1965,2026,27-05-2026,Rechtbank Noord-Nederland,Kort geding,candidate,0,2,7:457 7:458a,6:119 7:457 7:458a
 ECLI:NL:RBNNE:2026:1990,2026,15-05-2026,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,sample,0,0,,
 ECLI:NL:RBNNE:2026:2437,2026,22-06-2026,Rechtbank Noord-Nederland,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBNNE:2026:320,2026,06-02-2026,Rechtbank Noord-Nederland,Kort geding,candidate,0,0,,6:119
@@ -5069,7 +5069,7 @@ ECLI:NL:RBOBR:2022:4822,2022,03-11-2022,Rechtbank Oost-Brabant,Bodemzaak,candida
 ECLI:NL:RBOBR:2022:4913,2022,09-11-2022,Rechtbank Oost-Brabant,Bodemzaak,candidate,0,0,,6:102 6:119
 ECLI:NL:RBOBR:2022:528,2022,09-02-2022,Rechtbank Oost-Brabant,Bodemzaak,candidate,0,0,,6:4
 ECLI:NL:RBOBR:2022:5442,2022,12-12-2022,Rechtbank Oost-Brabant,Beschikking,candidate,0,0,,
-ECLI:NL:RBOBR:2022:96,2022,19-01-2022,Rechtbank Oost-Brabant,Bodemzaak,candidate,0,3,7:454 7:457 7:458,6:119 7:454 7:457 7:458 7:458a
+ECLI:NL:RBOBR:2022:96,2022,19-01-2022,Rechtbank Oost-Brabant,Bodemzaak,candidate,0,4,7:454 7:457 7:458 7:458a,6:119 7:454 7:457 7:458 7:458a
 ECLI:NL:RBOBR:2023:4270,2023,30-08-2023,Rechtbank Oost-Brabant,Eerste aanleg - enkelvoudig,candidate,0,0,,6:101 6:102 6:119a 6:162 6:163 6:230a 6:230c 6:233 6:234 6:235 6:265 6:272 6:6 6:74 6:96 6:98 7:400 7:401 7:403 7:404
 ECLI:NL:RBOBR:2023:4399,2023,06-09-2023,Rechtbank Oost-Brabant,Kort geding,sample,0,0,,6:119
 ECLI:NL:RBOBR:2023:4502,2023,09-08-2023,Rechtbank Oost-Brabant,Eerste aanleg - enkelvoudig,candidate,0,0,,
@@ -5739,7 +5739,7 @@ ECLI:NL:RBROT:2022:2419,2022,30-03-2022,Rechtbank Rotterdam,Eerste aanleg - meer
 ECLI:NL:RBROT:2022:2476,2022,30-03-2022,Rechtbank Rotterdam,Beschikking,candidate,0,0,,6:162 6:74 6:96
 ECLI:NL:RBROT:2022:2892,2022,25-03-2022,Rechtbank Rotterdam,Beschikking,candidate,0,0,,6:1 6:4
 ECLI:NL:RBROT:2022:3162,2022,12-04-2022,Rechtbank Rotterdam,Beschikking,candidate,0,0,,
-ECLI:NL:RBROT:2022:345,2022,13-01-2022,Rechtbank Rotterdam,Kort geding,candidate,0,1,7:457,7:457 7:458a
+ECLI:NL:RBROT:2022:345,2022,13-01-2022,Rechtbank Rotterdam,Kort geding,candidate,0,2,7:457 7:458a,7:457 7:458a
 ECLI:NL:RBROT:2022:3586,2022,11-05-2022,Rechtbank Rotterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119 6:248
 ECLI:NL:RBROT:2022:4138,2022,13-05-2022,Rechtbank Rotterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,
 ECLI:NL:RBROT:2022:4358,2022,01-04-2022,Rechtbank Rotterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:101 6:119 7:400 7:401
@@ -5933,7 +5933,7 @@ ECLI:NL:RBROT:2025:1592,2025,05-02-2025,Rechtbank Rotterdam,Eerste aanleg - meer
 ECLI:NL:RBROT:2025:1593,2025,05-02-2025,Rechtbank Rotterdam,Eerste aanleg - meervoudig,candidate,0,0,,6:101 6:119 6:162 6:193a 6:193b
 ECLI:NL:RBROT:2025:1864,2025,17-01-2025,Rechtbank Rotterdam,Eerste aanleg - enkelvoudig,candidate,0,0,,6:119
 ECLI:NL:RBROT:2025:2589,2025,21-02-2025,Rechtbank Rotterdam,Eerste aanleg - enkelvoudig,candidate,0,1,7:448,7:448
-ECLI:NL:RBROT:2025:2707,2025,03-03-2025,Rechtbank Rotterdam,Kort geding,candidate,0,2,7:454 7:457,6:119 7:454 7:457 7:458a
+ECLI:NL:RBROT:2025:2707,2025,03-03-2025,Rechtbank Rotterdam,Kort geding,candidate,0,3,7:454 7:457 7:458a,6:119 7:454 7:457 7:458a
 ECLI:NL:RBROT:2025:2935,2025,08-01-2025,Rechtbank Rotterdam,Beschikking,candidate,0,0,,
 ECLI:NL:RBROT:2025:3177,2025,14-02-2025,Rechtbank Rotterdam,Beschikking,candidate,0,0,,
 ECLI:NL:RBROT:2025:3188,2025,25-02-2025,Rechtbank Rotterdam,Beschikking,candidate,0,0,,
@@ -6431,7 +6431,7 @@ ECLI:NL:RBZWB:2022:8165,2022,19-12-2022,Rechtbank Zeeland-West-Brabant,Rekestpro
 ECLI:NL:RBZWB:2022:8174,2022,09-03-2022,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,6:265 7:213 7:214
 ECLI:NL:RBZWB:2022:8175,2022,25-05-2022,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,
 ECLI:NL:RBZWB:2022:8461,2022,20-12-2022,Rechtbank Zeeland-West-Brabant,Rekestprocedure,sample,0,0,,
-ECLI:NL:RBZWB:2023:1155,2023,20-02-2023,Rechtbank Zeeland-West-Brabant,Kort geding,candidate,0,0,,7:458a
+ECLI:NL:RBZWB:2023:1155,2023,20-02-2023,Rechtbank Zeeland-West-Brabant,Kort geding,candidate,0,1,7:458a,7:458a
 ECLI:NL:RBZWB:2023:123,2023,02-01-2023,Rechtbank Zeeland-West-Brabant,Kort geding,candidate,0,2,7:446 7:460,7:446 7:460
 ECLI:NL:RBZWB:2023:1477,2023,08-03-2023,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,
 ECLI:NL:RBZWB:2023:1701,2023,15-03-2023,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,6:106 6:119 6:96
@@ -6486,7 +6486,7 @@ ECLI:NL:RBZWB:2024:4590,2024,13-06-2024,Rechtbank Zeeland-West-Brabant,Rekestpro
 ECLI:NL:RBZWB:2024:4622,2024,03-07-2024,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,6:119 6:96
 ECLI:NL:RBZWB:2024:4623,2024,03-07-2024,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,6:119 7:962
 ECLI:NL:RBZWB:2024:4664,2024,18-04-2024,Rechtbank Zeeland-West-Brabant,Beschikking,candidate,0,0,,
-ECLI:NL:RBZWB:2024:471,2024,05-02-2024,Rechtbank Zeeland-West-Brabant,Kort geding,candidate,0,0,,7:458a
+ECLI:NL:RBZWB:2024:471,2024,05-02-2024,Rechtbank Zeeland-West-Brabant,Kort geding,candidate,0,1,7:458a,7:458a
 ECLI:NL:RBZWB:2024:4733,2024,15-05-2024,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,6:119 6:96
 ECLI:NL:RBZWB:2024:4746,2024,05-06-2024,Rechtbank Zeeland-West-Brabant,Bodemzaak,candidate,0,0,,6:265 7:213 7:219 7:231
 ECLI:NL:RBZWB:2024:5018,2024,04-07-2024,Rechtbank Zeeland-West-Brabant,Rekestprocedure,sample,0,0,,

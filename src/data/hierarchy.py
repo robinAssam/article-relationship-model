@@ -74,7 +74,7 @@ LEGAL_TREE: dict[str, Any] = {
                                     },
                                     "6.3.2": {
                                         "name": "Aansprakelijkheid voor personen en zaken",
-                                        "articles": (169, 181),
+                                        "articles": (169, 184),
                                     },
                                 },
                             },
@@ -230,7 +230,8 @@ def parse_article_id(article_id: str) -> dict[str, Any]:
         path_parts.append(f"Titel {titel_key}")
     if afdeling_key:
         path_parts.append(f"Afd {afdeling_key}")
-    path_parts.append(f"Art {book_num}:{art_num}")
+    # Keep the letter suffix: 7:458a and 7:458b are articles of their own
+    path_parts.append(f"Art {book_num}:{art_str}")
 
     return {
         "rechtsgebied": "private_law",
@@ -243,7 +244,7 @@ def parse_article_id(article_id: str) -> dict[str, Any]:
         "titel_name": titel_name,
         "afdeling": afdeling_key,
         "afdeling_name": afdeling_name,
-        "artikel": f"{book_num}:{art_num}",
+        "artikel": f"{book_num}:{art_str}",
         "path": " > ".join(path_parts),
         "error": None,
     }

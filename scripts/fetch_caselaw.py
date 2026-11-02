@@ -51,7 +51,19 @@ API = "https://data.rechtspraak.nl/uitspraken"
 SUBJECT = "http://psi.rechtspraak.nl/rechtsgebied#civielRecht"
 PAUSE = 0.25  # seconds between requests: be polite to the public API
 
-WGBO = {f"7:{n}" for n in range(446, 469)}
+
+
+def is_wgbo(article: str) -> bool:
+    """True for 7:446-468, including inserted articles such as 7:458a."""
+    m = re.fullmatch(r"7:(\d+)[a-z]?", article)
+    return bool(m) and 446 <= int(m.group(1)) <= 468
+
+
+def _article_key(article: str) -> tuple[int, int, str]:
+    """Sort key in legal order: 7:458 < 7:458a < 7:458b < 7:459."""
+    book, num = article.split(":")
+    digits = re.match(r"\d+", num).group()
+    return int(book), int(digits), num[len(digits):]
 
 # Medical vocabulary for the candidate filter (matched in title + summary)
 
@@ -171,7 +183,7 @@ def _write_citations() -> None:
         meta = index.get(ecli, {})
         procedure, text = _judgment_text(path)
         cited = bw_citations(text)
-        wgbo = sorted(cited & WGBO, key=lambda a: int(a.split(":")[1].rstrip("abcdefgh")))
+        wgbo = sorted((a for a in cited if is_wgbo(a)), key=_article_key)
         rows.append({
             "ecli": ecli, "year": ecli.split(":")[3], "date": meta.get("date", ""),
             "court": meta.get("court", ""),

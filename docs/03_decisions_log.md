@@ -300,3 +300,46 @@ optimistic; the test run decides. Per article in the top 10 (hybrid ->
 graph_both): 7:457 17 -> 20, 7:454 7 -> 9, 7:462 12 -> 14, 6:96 8 -> 6,
 7:453 4 -> 3, 6:74 0 -> 0, 6:162 0 -> 0. The law's explicit structure gives a
 small, broad gain but cannot reach the general-norm articles.
+
+
+## 02/11/2026 — Corrections after a code review
+
+- **7:458a and 7:458b count as WGBO articles.** `fetch_caselaw.py` defined
+  the WGBO as 7:446-468 by number only, so judgments citing only these
+  inserted articles were missed: 707 judgments cite the WGBO, not 703
+  (289 cite two or more; 188 also cite a Book 6 corpus article; 23 of the
+  25 WGBO articles are cited). Rebuilding the dataset added 4 items (1 dev,
+  3 test): 395 items, 126 dev / 269 test. The frozen split kept every
+  existing item on its side, and no existing answer changed.
+- **Section links group by afdeling.** `tree_adjacency` grouped 6:74-94 by
+  paragraaf (one level deeper), unlike every other section. Grouping by
+  afdeling gives 803 section links instead of 644.
+- **Legal tree in `hierarchy.py`.** Letter suffixes were dropped
+  (7:458a, 7:458b, 6:107a, 6:177a became 7:458, 6:107, 6:177) and afdeling
+  6.3.2 ended at 6:181 instead of 6:184. No annotated article was affected,
+  so the atom evaluation is unchanged; a test now checks that every
+  downloaded article gets an afdeling.
+- **Hand-check sample.** The sample was drawn from all judgments, so 17 of
+  the 50 were test items. Redrawn before any checking started: 35 dev and
+  15 dropped judgments, drawn separately, in mixed order.
+
+Baselines rerun on the 126 dev questions. The sweep picks the same spreading
+strengths (citations 0.25, sections 1.0, both 0.1 + 1.0):
+
+    random:     MRR 0.097  R@5 0.056  R@10 0.112  R@20 0.226  nDCG@10 0.063
+    bm25:       MRR 0.327  R@5 0.277  R@10 0.468  R@20 0.611  nDCG@10 0.296
+    dense:      MRR 0.319  R@5 0.311  R@10 0.420  R@20 0.617  nDCG@10 0.286
+    hybrid:     MRR 0.372  R@5 0.297  R@10 0.465  R@20 0.660  nDCG@10 0.315
+    hybrid_rrf: MRR 0.381  R@5 0.306  R@10 0.467  R@20 0.661  nDCG@10 0.323
+    graph_cite: MRR 0.375  R@5 0.345  R@10 0.499  R@20 0.630  nDCG@10 0.341
+    graph_tree: MRR 0.392  R@5 0.320  R@10 0.497  R@20 0.686  nDCG@10 0.340
+    graph_both: MRR 0.406  R@5 0.347  R@10 0.505  R@20 0.696  nDCG@10 0.354
+
+Paired tests (bootstrap 95% interval, permutation p): dense - BM25 MRR
+-0.008 (p 0.81), R@10 -0.047 [-0.133, +0.037] (p 0.29); hybrid_rrf - BM25
+MRR +0.054 [+0.003, +0.105] (p 0.04); hybrid_rrf - dense MRR +0.062 (p 0.01);
+graph_both - hybrid_rrf nDCG@10 +0.032 [+0.011, +0.053] (p 0.004);
+graph_tree - hybrid_rrf nDCG@10 +0.017 (p 0.01); graph_cite - hybrid_rrf
+nDCG@10 +0.018 (p 0.25). Conclusions unchanged; the RRF MRR gain over BM25
+moves from p 0.06 to p 0.04. Blind spots unchanged: 6:74 0/11 and 6:162 0/9
+for every system, 7:453 15/44 (BM25), 0/44 (dense), 3/44 (graph_both).

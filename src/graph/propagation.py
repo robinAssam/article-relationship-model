@@ -27,6 +27,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from pathlib import Path
 
 import numpy as np
@@ -48,12 +49,18 @@ def citation_adjacency(ids: list[str], path: Path | str = DEFAULT_REFERENCES) ->
 
 
 def tree_adjacency(ids: list[str], path: Path | str = DEFAULT_STATUTES) -> np.ndarray:
-    """1 where two articles are in the same section (afdeling), else 0."""
+    """1 where two articles are in the same section (afdeling), else 0.
+
+    Some afdelingen are split further into paragrafen (6:74-94); articles in
+    different paragrafen of the same afdeling still count as one section. An
+    article outside any afdeling belongs to the level directly above it.
+    """
     section = {}
     with Path(path).open(encoding="utf-8") as f:
         for line in f:
             art = json.loads(line)
-            section[art["article_id"]] = art["path"].rsplit("/", 1)[0]
+            m = re.match(r".*?/Afdeling\d+", art["path"])
+            section[art["article_id"]] = m.group(0) if m else art["path"].rsplit("/", 1)[0]
     secs = np.array([section[a] for a in ids])
     A = (secs[:, None] == secs[None, :]).astype(float)
     np.fill_diagonal(A, 0.0)
