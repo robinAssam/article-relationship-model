@@ -16,18 +16,20 @@ liability and damages that medical cases fall back on.
 **Demo:** [Statute Navigator](https://statute-navigator.streamlit.app)
 (password protected)
 
-![Statute Navigator: a question and the ranked articles](docs/screenshots/app_search.png)
+![Statute Navigator: articles ranked for a set of labels about a hospital liable for a doctor's error](docs/screenshots/app_search.png)
 
 
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph once["Built once"]
+        direction LR
         A["Official law text<br/>(87 articles)"] --> B["Split into atoms<br/>and label them"]
         B --> C["Atom graph<br/>shared labels, references"]
     end
     subgraph each["For every question"]
+        direction LR
         Q["Question<br/>in Dutch or English"] --> D["Split into atoms<br/>with the same labels"]
         D --> E["Score every atom<br/>(rare labels count more)"]
         E --> F["Rank articles<br/>by their best atom"]
@@ -47,16 +49,17 @@ time, references and other key terms:
 A question is split into atoms the same way by an LLM (Anthropic's Claude),
 reusing the labels of the corpus. Two atoms score high when they share
 labels, rare labels counting more; labels with the same meaning (*doctor* ~
-*care provider*) also count. The app shows the match label by label:
+*care provider*) also count. The app explains every score label by label:
 
-![How a question was split into atoms](docs/screenshots/app_atoms.png)
+![Why this score? Each shared label and how much it counts](docs/screenshots/app_why_score.png)
 
-![Why this score? Matched, similar and missing labels](docs/screenshots/app_why_score.png)
+From the best-matching atoms, a graph walk adds related articles, through
+shared labels (dotted) and explicit references, and records where it
+started and which link brought each article in:
 
-From the best matches, a graph walk adds related articles and records which
-link brought each one in:
+![Network view: the starting article and the articles reached from it](docs/screenshots/app_graph.png)
 
-![Graph view and reasoning trail](docs/screenshots/app_graph.png)
+![Reasoning trail: the starting atoms of the walk](docs/screenshots/app_trail.png)
 
 More detail: [docs/methodology](docs/methodology/README.md).
 
@@ -128,9 +131,7 @@ best possible 0.86).
 
 The answers are every corpus article a judgment cites, including ones cited
 only in passing. A sample of 50 judgments is checked by hand on a separate
-page (`streamlit run handcheck.py`):
-
-![The hand-check page](docs/screenshots/handcheck.png)
+page (`streamlit run handcheck.py`).
 
 
 ## Can it scale?
