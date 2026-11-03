@@ -22,10 +22,7 @@ import pandas as pd
 import streamlit as st
 
 
-# ---------------------------------------------------------------------------
-# Project-root setup — lets the app run from anywhere
-# ---------------------------------------------------------------------------
-
+# Find the project root, so the app runs from any working directory
 def _find_project_root(marker: str = "src/data/atom_table.py") -> Path:
     for p in [Path.cwd().resolve(), *Path.cwd().resolve().parents]:
         if (p / marker).exists():
@@ -55,10 +52,6 @@ from src.data.query import (  # noqa: E402
 )
 from src.data.reasoning import chained_reasoning  # noqa: E402
 
-
-# ---------------------------------------------------------------------------
-# Page config and styling
-# ---------------------------------------------------------------------------
 
 st.set_page_config(
     page_title="Statute Navigator",
@@ -125,10 +118,6 @@ st.markdown(
 )
 
 
-# ---------------------------------------------------------------------------
-# Pipeline loading — cached across the whole session
-# ---------------------------------------------------------------------------
-
 @st.cache_resource(show_spinner="Loading atoms, edges, and encoder…")
 def load_pipeline() -> dict:
     """One-time pipeline load. Rebuilds only if the underlying files change."""
@@ -139,7 +128,7 @@ def load_pipeline() -> dict:
     edges_weighted = build_edge_table(df, weights=weights_idf)
     ref_edges = build_reference_edges(df_tax)
 
-    # Semantic similarity is the slowest step — first run downloads ~420 MB
+    # Semantic similarity is the slowest step: the first run downloads ~420 MB
     # and takes ~30 seconds. Subsequent runs are instant thanks to caching.
     from sentence_transformers import SentenceTransformer
     # EMBEDDING_MODEL lets a memory-constrained host swap in a smaller model
@@ -164,10 +153,6 @@ def load_pipeline() -> dict:
         "taxonomy": {a: parse_article_id(a) for a in df["article_id"].unique()},
     }
 
-
-# ---------------------------------------------------------------------------
-# Queries
-# ---------------------------------------------------------------------------
 
 PRESETS: dict[str, dict] = {
     "Patient asks to destroy their file": {
@@ -296,10 +281,6 @@ def _use_preset(label: str) -> None:
     _submit_tags(label, query)
 
 
-# ---------------------------------------------------------------------------
-# Sidebar: settings and tag-based queries
-# ---------------------------------------------------------------------------
-
 def render_sidebar(tags_by_field: dict[str, list[str]]) -> dict:
     st.sidebar.header("Search settings")
     params = {
@@ -338,10 +319,6 @@ def render_sidebar(tags_by_field: dict[str, list[str]]) -> dict:
     )
     return params
 
-
-# ---------------------------------------------------------------------------
-# Rendering helpers
-# ---------------------------------------------------------------------------
 
 def _esc(text: str) -> str:
     return html.escape(str(text))
@@ -795,7 +772,7 @@ def render_subgraph_plot(result: dict, ref_edges: pd.DataFrame,
     for a in articles:
         G.add_node(a, is_anchor=(a in anchor_articles))
 
-    # Reference edges: aggregate atom→article citations into article→article
+    # Reference edges: aggregate atom-to-article citations into article-to-article
     ref_pairs: dict[tuple[str, str], list[str]] = {}
     if len(ref_edges):
         atom_ids_surfaced = {c["atom_id"] for c in result["chain"]}
@@ -952,10 +929,6 @@ def render_tables(result: dict, pipe: dict) -> None:
             else:
                 st.caption("No shared-tag edges among the surfaced atoms.")
 
-
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 
 def main() -> None:
     if not _check_password():

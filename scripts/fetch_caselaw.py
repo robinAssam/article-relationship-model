@@ -52,7 +52,6 @@ SUBJECT = "http://psi.rechtspraak.nl/rechtsgebied#civielRecht"
 PAUSE = 0.25  # seconds between requests: be polite to the public API
 
 
-
 def is_wgbo(article: str) -> bool:
     """True for 7:446-468, including inserted articles such as 7:458a."""
     m = re.fullmatch(r"7:(\d+)[a-z]?", article)
@@ -93,8 +92,6 @@ def get(url: str, params: list[tuple[str, str]] | None = None, tries: int = 4) -
             time.sleep(5 * (attempt + 1))
     raise RuntimeError("unreachable")
 
-
-# --------------------------------------------------------------------- index
 
 def cmd_index(args) -> None:
     RAW.mkdir(parents=True, exist_ok=True)
@@ -137,8 +134,6 @@ def cmd_index(args) -> None:
     print(f"\n{len(rows)} summaries -> {INDEX.relative_to(PROJECT_ROOT)}; "
           f"{n_cand} medical candidates ({100 * n_cand / len(rows):.1f}%)")
 
-
-# ------------------------------------------------------------- fetch / sample
 
 def _read_index() -> list[dict]:
     with INDEX.open(encoding="utf-8") as f:
@@ -222,8 +217,6 @@ def cmd_sample(args) -> None:
     _write_citations()
     cmd_report(args)
 
-
-# -------------------------------------------------------------------- report
 
 def cmd_report(args) -> None:
     import pandas as pd

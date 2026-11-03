@@ -70,8 +70,6 @@ def article_documents(path: Path | str = DEFAULT_STATUTES) -> tuple[list[str], l
     return ids, docs
 
 
-# ------------------------------------------------------------------- systems
-
 def bm25_scores(questions: list[str], docs: list[str], k1: float = 1.5,
                 b: float = 0.75) -> np.ndarray:
     """BM25 (Okapi) score of every article for every question."""
@@ -124,8 +122,6 @@ def rrf_fusion(*score_matrices: np.ndarray, k: int = 60) -> np.ndarray:
     ranks = [scipy.stats.rankdata(-s, axis=1) for s in score_matrices]
     return sum(1.0 / (k + r) for r in ranks)
 
-
-# ------------------------------------------------------------------- metrics
 
 def rank_metrics(ranked: list[str], answers: set[str], ks=KS, ndcg_k: int = NDCG_K) -> dict:
     """Metrics for one question, given the articles in ranked order.

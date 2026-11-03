@@ -355,10 +355,6 @@ def show_atom(df: pd.DataFrame, atom_id: str) -> None:
     print()
 
 
-# ============================================================================
-# Semantic similarity layer
-# ============================================================================
-
 DEFAULT_SEMANTIC_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
 
@@ -496,10 +492,6 @@ def build_semantic_edge_table(
 
     return pd.DataFrame(rows)
 
-
-# ============================================================================
-# Atom classifier
-# ============================================================================
 
 def filter_candidates(
     df: pd.DataFrame,

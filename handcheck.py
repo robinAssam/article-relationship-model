@@ -93,8 +93,6 @@ e.g. because the judgment only names it in words.
 """
 
 
-# ------------------------------------------------------------------- data
-
 @st.cache_data
 def load_sample() -> pd.DataFrame:
     return pd.read_csv(SAMPLE)
@@ -181,8 +179,6 @@ def parse_articles(cell: str) -> dict[str, str]:
     return dict(pair.split("=", 1) for pair in cell.split() if "=" in pair)
 
 
-# ---------------------------------------------------------------- display
-
 def highlight(text: str, articles: set[str]) -> str:
     """HTML-escaped text with every citation of the given articles marked."""
     out, pos = [], 0
@@ -212,8 +208,6 @@ def scroll_box(body: str, height: int = 420) -> None:
                 f'border:1px solid rgba(128,128,128,0.35);border-radius:6px;'
                 f'line-height:1.55;font-size:0.92rem">{body}</div>', unsafe_allow_html=True)
 
-
-# ------------------------------------------------------------------ pages
 
 def check_page(annotator: str, sample: pd.DataFrame, labels: dict[str, dict]) -> None:
     eclis = list(sample["ecli"])
@@ -342,8 +336,6 @@ def results_page(annotator: str, labels: dict[str, dict]) -> None:
     st.markdown("**All labels**")
     st.dataframe(df, hide_index=True)
 
-
-# ------------------------------------------------------------------- main
 
 def main() -> None:
     st.set_page_config(page_title="Hand check", layout="wide")

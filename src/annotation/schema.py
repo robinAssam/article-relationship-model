@@ -42,7 +42,7 @@ class Atom:
     article_id: str
     lid: int
     text: str               # English (primary)
-    text_nl: str = ""       # Dutch (original source — for reference)
+    text_nl: str = ""       # Dutch (original source, for reference)
     source: str = ""
 
     # --- Task 1: pre vs post ---

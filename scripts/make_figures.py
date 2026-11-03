@@ -114,8 +114,6 @@ def _save(fig, name: str) -> None:
     print(f"  {name}")
 
 
-# -------------------------------------------------------------- corpus map
-
 def corpus_map() -> None:
     arts, annotated = _articles(), _annotated()
     rows = []
@@ -138,8 +136,6 @@ def corpus_map() -> None:
                  f"{total_done} split into atoms so far")
     _save(fig, "corpus_map.png")
 
-
-# -------------------------------------------------------------- data funnel
 
 def data_funnel() -> None:
     if INDEX.exists():
@@ -174,8 +170,6 @@ def data_funnel() -> None:
     ax.set_title("From all civil judgments to a test set of real cases")
     _save(fig, "data_funnel.png")
 
-
-# ------------------------------------------------------------- atom example
 
 LABEL_FIELDS = ["actors", "legal_relations", "acts", "temporal", "explicit_references",
                 "hierarchies", "residual"]
@@ -221,8 +215,6 @@ def atom_example(article: str = "6:162") -> None:
     _save(fig, "atom_example.png")
 
 
-# ------------------------------------------------------------------ results
-
 def _bootstrap_ci(values: np.ndarray, draws: int = 5000, seed: int = 0) -> tuple[float, float]:
     rng = np.random.default_rng(seed)
     means = values[rng.integers(0, len(values), (draws, len(values)))].mean(axis=1)
@@ -257,8 +249,6 @@ def results(split: str = "dev") -> None:
     fig.tight_layout(rect=(0, 0, 1, 0.94))
     _save(fig, "results.png")
 
-
-# -------------------------------------------------------------- blind spots
 
 def blind_spots(split: str = "dev", n_articles: int = 11, k: int = 10) -> None:
     ranks = pd.read_csv(TABLES / f"baselines_{split}_answer_ranks.csv")
@@ -307,8 +297,6 @@ _TOPICS = {
 def _short_name(article: str) -> str:
     return _TOPICS.get(article, "")
 
-
-# ----------------------------------------------------------- citation links
 
 def citation_links() -> None:
     arts = _articles()

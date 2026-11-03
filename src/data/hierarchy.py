@@ -31,10 +31,6 @@ from typing import Any
 import pandas as pd
 
 
-# ---------------------------------------------------------------------------
-# Tree definition
-# ---------------------------------------------------------------------------
-
 LEGAL_TREE: dict[str, Any] = {
     "private_law": {
         "name": "Privaatrecht",
@@ -143,10 +139,6 @@ LEGAL_TREE: dict[str, Any] = {
     },
 }
 
-
-# ---------------------------------------------------------------------------
-# Parsing
-# ---------------------------------------------------------------------------
 
 # Matches "7:454", "7:454(1)", "7:454(1).a", etc. Captures book number and
 # article number; ignores anything after.
@@ -268,10 +260,6 @@ def _error(msg: str) -> dict[str, Any]:
     }
 
 
-# ---------------------------------------------------------------------------
-# DataFrame enrichment and reporting
-# ---------------------------------------------------------------------------
-
 TAXONOMY_COLUMNS = [
     "rechtsgebied",
     "wetboek",
@@ -316,10 +304,6 @@ def tree_summary(df: pd.DataFrame) -> pd.DataFrame:
             rows.append({"level": level, "value": value, "n_atoms": int(n)})
     return pd.DataFrame(rows)
 
-
-# ---------------------------------------------------------------------------
-# Hierarchy containment edges
-# ---------------------------------------------------------------------------
 
 def _missing(v: Any) -> bool:
     """True if v is None or a pandas/NumPy missing value.
@@ -396,10 +380,6 @@ def build_hierarchy_edges(df: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(edges)
 
 
-# ---------------------------------------------------------------------------
-# Hierarchical LOO evaluation
-# ---------------------------------------------------------------------------
-
 def evaluate_at_levels(
     df: pd.DataFrame,
     weights: dict | None = None,
@@ -469,10 +449,6 @@ def evaluate_at_levels(
     return eval_df, summary
 
 
-# ---------------------------------------------------------------------------
-# Cross-article reference edges
-# ---------------------------------------------------------------------------
-
 # Reference-text patterns for _resolve_reference
 _REF_INTERNAL = re.compile(
     r'^\s*(paragraph|lid|first paragraph|second paragraph|third paragraph|'
@@ -505,7 +481,7 @@ def _resolve_reference(ref_text: str, source_book: str | None) -> str | None:
     if m:
         return f"{m.group(1)}:{m.group(2)}"
 
-    # "article N" — resolve using source book
+    # "article N": resolve using the source book
     m = _REF_ARTICLE_ONLY.search(text)
     if m and source_book:
         return f"{source_book}:{m.group(1)}"

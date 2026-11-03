@@ -189,7 +189,7 @@ annotations are in English while the law and case law are Dutch.
     data/                       Annotations, processed law text and citations
     outputs/                    Result tables and figures
     notebooks/                  Exploration and experiments
-    tests/test_pipeline.py      46 tests
+    tests/test_pipeline.py      43 tests
 
 
 ## Setup

@@ -22,7 +22,6 @@ from __future__ import annotations
 import re
 import xml.etree.ElementTree as ET
 
-# ------------------------------------------------------------------ citations
 
 # "artikel 7:454 BW", "art. 7:448 lid 2 BW", "artikelen 7:446 en 7:453 BW", "(6:162 BW)"
 _CITE = re.compile(r"(?<![\d:])([67]):(\d{1,3}[a-z]?)(?![\d:])")
@@ -48,8 +47,6 @@ def bw_citations(text: str) -> set[str]:
     """Book 6/7 BW article citations in a judgment, e.g. {'7:454', '6:162'}."""
     return {article for _, _, article in bw_citation_spans(text)}
 
-
-# -------------------------------------------------------------------- masking
 
 ARTICLE_MASK = "[ARTIKEL]"
 LAW_MASK = "[WET]"
@@ -113,8 +110,6 @@ def mask_citations(text: str) -> tuple[str, int]:
     masked, k = _LAW_NAME.subn(LAW_MASK, masked)
     return masked, n + k
 
-
-# ------------------------------------------------------------------- parsing
 
 # Section titles that introduce the facts: "2 De feiten", "Feiten",
 # "De vaststaande feiten", "Feitelijke achtergrond", "Uitgangspunten en feiten"
